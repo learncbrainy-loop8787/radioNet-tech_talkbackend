@@ -20,7 +20,4 @@ Rails.application.routes.draw do
   get '/find_intermediate' => 'warriors#find_legend'
   get '/find_god' => 'warriors#find_god'
 
-
-
-
 end
