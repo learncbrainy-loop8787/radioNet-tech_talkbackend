@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
   resources :unit_warriors, only: [:index, :create, :destroy, :show]
   resources :units, only: [:index, :show]
   resources :warriors, only: [:index, :show]
-  resources :users, only: [:create, :show]
+  resources :users
 
   post '/dday' => 'units#dday'
 
@@ -19,4 +17,5 @@ Rails.application.routes.draw do
   get '/find_intermediate' => 'warriors#find_legend'
   get '/find_god' => 'warriors#find_god'
 
+   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
