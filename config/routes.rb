@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/sort_kills_asc' => 'warriors#sort_kills_asc'
   get '/sort_kills_desc'=> 'warriors#sort_kills_desc'
 
+  
   get '/find_single' => 'warriors#find_single'
   get '/find_thousands' => 'warriors#find_thousands'
   get '/find_millions' => 'warriors#find_millions'
