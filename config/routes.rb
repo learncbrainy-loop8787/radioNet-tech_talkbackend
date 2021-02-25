@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get '/find_thousands' => 'warriors#find_thousands'
   get '/find_millions' => 'warriors#find_millions'
  
-
   get '/find_master' => 'warriors#find_master'
   get '/find_intermediate' => 'warriors#find_legend'
   get '/find_god' => 'warriors#find_god'
